@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Listings – CareerBay</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #1877F2;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #ffffff;
+      color: #1877F2;
+      border: 1px solid #1877F2;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #1877F2;
+      color: white;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      background: #e6f0ff;
+      border-top: 1px solid #1877F2;
+      border-bottom: 1px solid #1877F2;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 15s linear infinite;
+      font-weight: bold;
+      color: #1877F2;
+      padding: 10px;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    .sidebar-ad {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .article-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+
+    .article-box h2 {
+      color: #1877F2;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .article-box p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #ffffff;
+      color: #28a745;
+      border: 1px solid #28a745;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .button:hover {
+      background: #28a745;
+      color: white;
+    }
+
+    .ad-box {
+      border: 1px dashed #ccc;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      min-height: 250px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .pagination a {
+      text-decoration: none;
+      color: #28a745;
+      border: 1px solid #28a745;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .pagination a:hover {
+      background-color: #28a745;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+      nav a {
+        flex: none;
+        padding: 8px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        height: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="CareerBay Online Job Portal_files/logo.png" alt="CareerBay" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="joblistings.html">Latest Jobs</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee-wrapper">
+    <div class="marquee">🔥 Urgent Openings: Sales Consultant, Technical Advisor, Receptionist – Apply Now!</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="main-content">
+      <div class="article-box">
+        <h2>Cruise Ship Hospitality Jobs – 2025 Contracts</h2>
+        <p>Oceanic Career Services is recruiting for 6-9 month contracts with world-class cruise companies. Earn tax-free income while traveling to exotic destinations.</p>
+        <a href="Cruise_ship_jobs.html" class="button">Read More</a>
+      </div>
+
+      <div class="article-box">
+        <h2>Maldives Resort Jobs – 2025 Hiring Season</h2>
+        <p>Island Hospitality Recruiters is hiring for Maldives' top resorts with full work visa sponsorship and beachfront staff accommodation.</p>
+        <a href="Maldives_Resort_Job.html" class="button">Read More</a>
+      </div>
+
+      <div class="ad-box">[Ad Placeholder – Inline Ad Between Posts]</div>
+
+      <div class="article-box">
+        <h2>Dubai Retail Careers – 2025 Openings</h2>
+        <p>Gulf Retail Solutions is hiring for retail positions in Dubai's premium shopping destinations, offering full work visa processing.</p>
+        <a href="Dubai_Luxury_Retail.html" class="button">Read More</a>
+      </div>
+
+      <div class="article-box">
+        <h2>Singapore Hospitality Jobs – 2025 Work Pass Openings</h2>
+        <p>Lion City Careers is processing S Pass applications for hospitality roles at Singapore's top hotels and tourist attractions</p>
+        <a href="Singapore_Jobs.html" class="button">Read More</a>
+      </div>
+
+      <div class="article-box">
+        <h2>Malaysia Resort Jobs – 2025 Work Visa Openings</h2>
+        <p>Tropical Careers Malaysia is recruiting for resort positions with full work visa sponsorship at luxury properties across Malaysia.</p>
+        <a href="Malaysia.html" class="button">Read More</a>
+      </div>
+
+      <div class="ad-box">[Ad Placeholder – Bottom Inline Ad]</div>
+
+      <div class="pagination">
+        <a href="#" id="prev">Previous</a>
+        <a href="joblistings.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="#" id="next">Next</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Ads -->
+    <div class="sidebar-ad">
+      <div class="ad-box">[Ad Placeholder – Sidebar Top]</div>
+      <div class="ad-box">[Ad Placeholder – Sidebar Middle]</div>
+      <div class="ad-box">[Ad Placeholder – Sidebar Bottom]</div>
+    </div>
+  </div>
+
+  <!-- Add hidden tracker element here -->
+  <span id="currentPage" data-page="1" style="display: none;"></span>
+
+  <script>
+    const totalPages = 4; // Change this to your actual number of pages
+    const currentPageEl = document.getElementById('currentPage');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    function updateLinks() {
+      const current = parseInt(currentPageEl.getAttribute('data-page'));
+      prev.href = current > 1 ? `page${current - 1}.html` : '#';
+      next.href = current < totalPages ? `page${current + 1}.html` : '#';
+    }
+
+    // Detect current page from filename
+    const match = window.location.pathname.match(/page(\d+)\.html/);
+    if (match) {
+      const pageNum = parseInt(match[1]);
+      currentPageEl.setAttribute('data-page', pageNum);
+    }
+
+    updateLinks();
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 CareerBay. All rights reserved.
+	  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="TOS.html">TOS</a> |
+  </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerBay – Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #1877F2;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #ffffff;
+      color: #1877F2;
+      border: 1px solid #1877F2;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #1877F2;
+      color: white;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      background: #e6f0ff;
+      border-top: 1px solid #1877F2;
+      border-bottom: 1px solid #1877F2;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 15s linear infinite;
+      font-weight: bold;
+      color: #1877F2;
+      padding: 10px;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .tile {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.02);
+    }
+
+    .tile h3 {
+      color: #1877F2;
+      margin-bottom: 10px;
+    }
+
+    .tile p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .tile a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #ffffff;
+      color: #28a745;
+      border-radius: 4px;
+      border: 1px solid #28a745;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .tile a:hover {
+      background: #28a745;
+      color: white;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #1877F2;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin: 20px 0;
+    }
+
+    .ad-slot {
+      border: 1px dashed #ccc;
+      background: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .cookie-banner button {
+      margin-left: 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+      nav a {
+        flex: none;
+        padding: 8px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        height: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="CareerBay Online Job Portal_files/logo.png" alt="CareerBay Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="joblistings.html">Latest Jobs&nbsp;</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="marquee-wrapper">
+    <div class="marquee">🔥 Featured: Top Courses & Tools To Boost Your Career – Enroll Now!</div>
+  </div>
+
+  <div class="container">
+    <div class="ad-slot">Advertisement&nbsp;</div>
+
+    <div class="tiles-grid">
+      <div class="tile">
+        <h3>Learn Digital Marketing</h3>
+        <p>Master SEO, Ads & Social Media with this affordable course.</p>
+        <a href="#">Check Course</a>
+      </div>
+      <div class="tile">
+        <h3>Resume &amp; Cover Letter Service</h3>
+        <p>Professional CVs tailored to job success. Fast &amp; effective.</p>
+        <a href="#">Get Help</a>
+      </div>
+      <div class="tile">
+        <h3>Master Freelancing</h3>
+        <p>Learn how to start earning from platforms like Fiverr & Upwork.</p>
+        <a href="#">Start Now</a>
+      </div>
+      <div class="tile">
+        <h3>AI Tools Bundle</h3>
+        <p>Get lifetime access to powerful AI tools for creators & workers.</p>
+        <a href="#">Grab Bundle</a>
+      </div>
+      <div class="tile">
+        <h3>Work Abroad Guide</h3>
+        <p>Complete step-by-step guide to land jobs overseas.</p>
+        <a href="#">View Guide</a>
+      </div>
+      <div class="tile">
+        <h3>Language Mastery Packs</h3>
+        <p>Fluent in Arabic, French, or English? Here's your toolkit.</p>
+        <a href="#">Explore Now</a>
+      </div>
+    </div>
+
+    <div class="ad-slot">Advertisement&nbsp;</div>
+
+    <div class="social-links">
+      <p>Follow us on:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Telegram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+
+    <div class="ad-slot">Advertisement</div>
+  </div>
+
+<footer>
+  <p>&copy; 2025 CareerBay</p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="TOS.html">TOS</a> |
+  </p>
+</footer>
+
+  <div class="cookie-banner" id="cookie-banner">
+    This website uses cookies to enhance the user experience.
+    <button onclick="document.getElementById('cookie-banner').style.display='none'">Accept</button>
+  </div>
+
+</body>
+</html>
